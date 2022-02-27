@@ -1,0 +1,44 @@
+import React from "react";
+
+
+class ListTodo extends React.Component
+{
+    state = {
+        todoList: [
+            {id: '1', title: 'Doing home'},
+            {id: '2', title: 'School lean'},
+            {id: '3', title: 'Fixbug'},
+        ]
+    }
+    render(){
+        let {todoList} = this.state;
+        return(
+            <>
+                <div className="todo-list">
+                    <div className="add-todo">
+                        <input type="text" />
+                        <button type="button">Add</button>
+                    </div>
+                    <div className="list-todo">
+                        <div className="todo-child">
+                            1
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                        <div className="todo-child">
+                            2
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                        <div className="todo-child">
+                            3
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
+}
+export default ListTodo;

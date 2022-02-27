@@ -1,0 +1,12 @@
+.todo-list {
+    .list-todo {
+        margin-top: 10px;
+        .todo-child {
+            border-bottom: 1px solid #fff;
+            padding: 10px 0;
+            max-width: 500px;
+            margin: 0 auto;
+            color: #fff;
+        }
+    }
+}
